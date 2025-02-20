@@ -14,7 +14,3 @@ jobs:
       - uses: bluefireteam/flutter-gh-pages@v9
         with:
             baseHref: /simplelinewrapper/
-      - name: moving assets
-        run: |
-          mv assets/assets/* ./assets
-          rm -r assets/assets
