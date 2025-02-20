@@ -148,9 +148,9 @@ class _MyHomePageState extends State<MyHomePage> {
             shrinkWrap: true,
             children: <Widget>[
               if((Theme.of(context).brightness == Brightness.dark))
-              SizedBox(height: 200, child: Image.asset("logo_light.png")),
+              SizedBox(height: 200, child: Image.asset("assets/logo_light.png")),
               if((Theme.of(context).brightness == Brightness.light))
-              SizedBox(height: 200, child: Image.asset("logo_dark.png")),
+              SizedBox(height: 200, child: Image.asset("assets/logo_dark.png")),
               Card(
                 elevation: 4,
                 margin: const EdgeInsets.all(16),
