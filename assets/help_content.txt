@@ -1,0 +1,7 @@
+A wrapper consists of two parts of texts used to wrap lines of text on the left side and on the right side. A basic example of wrapped text is "word", which is word wrapped with a " character on the left side and a " character on the right side. This process might appear simple and that automation might not be so necessary but it could get tricky and long when some parts need escape characters or complete replacements especially when the text to wrap is too long.
+- Left Side : Text that will be used to wrap content on the left or starting side.
+- Right Side : Text that will be used to wrap content on the right or end side.
+- Wrap each line individually : When this option is ticked, each line is wrapped on their left and right sides, otherwise the content will be wrapped once on the starting line and at the very end.
+- Illegal characters : These are characters that will be followed by an escape character after wrapping.
+- Escape character/text : This is added before every illegal character.
+- Text replacements : You can specify specific parts of text to be replaced strictly by specific parts of text, this is useful for cases where adding an escape character cannot help.
