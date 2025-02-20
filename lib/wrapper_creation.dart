@@ -59,7 +59,7 @@ class _WrapperCreationState extends State<WrapperCreation> {
   }
 
   Future<void> _loadTextFromFile() async {
-    final String response = await rootBundle.loadString('assets/help_content.txt');
+    final String response = await rootBundle.loadString('assets/assets/help_content.txt');
     setState(() {
       _textFromFile = response;
     });
