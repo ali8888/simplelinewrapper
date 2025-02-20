@@ -1,15 +1,14 @@
-            - name: Deploy Flutter web app to github pages (removing large assets/NOTICES file)
-  # You may pin to the exact commit or the version.
-  # uses: AlienKevin/flutter-gh-pages@4e0be19d4fcfed6387414c958c6819eec1187806
-  uses: AlienKevin/flutter-gh-pages@v11
-  with:
-    # Which web renderer to be used, default is auto
-    webRenderer: # optional, default is auto
-    # The directory where the project is (default .)
-    workingDir: # optional, default is .
-    # 
-    targetBranch: # optional, default is gh-pages
-    # base href (if applicable)
-    baseHref: # optional, default is /
-    # Custom args like: --dart-define="simple=example"
-    customArgs: # optional
+name: Gh-Pages
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2 # Only works with v2
+      - uses: subosito/flutter-action@v1
+      - uses: bluefireteam/flutter-gh-pages@v7
