@@ -220,6 +220,7 @@ class _WrapperSettingsState extends State<WrapperSettings> {
                                                     child: Text('Reset to default'),
                                                     onPressed: () {
                                                       setKeyCombo('Ctrl + Enter');
+                                                      saveKeyCombo(KeyBindBase.ctrl, LogicalKeyboardKey.enter);
                                                     },
                                                   )
                                                 ],
